@@ -94,7 +94,7 @@ namespace MYSQLDBConnectWithWebsiteMaster.StudentMajorMinor
                 minorselection = true;
                 try
                 {
-                    //comment in branch copy
+                    
                     String commandforSem4 = "SELECT `Type`,`Special`,`CourseName`, `Hours`, `Marks` FROM `majormonir` WHERE Type='major' and Special='" + majorRadioList.SelectedItem.ToString().Trim() + "' and Trim='IV' UNION (SELECT `Type`,`Special`, `CourseName`, `Hours`, `Marks` FROM `majormonir` WHERE Type='Minor' and Special='" + minorRadioList.SelectedItem.ToString().Trim() + "' and Trim='IV')";
                     String commandforSem5 = "SELECT `Type`,`Special`,`CourseName`, `Hours`, `Marks` FROM `majormonir` WHERE Type='major' and Special='" + majorRadioList.SelectedItem.ToString().Trim() + "' and Trim='V' UNION (SELECT `Type`,`Special`,`CourseName`, `Hours`, `Marks` FROM `majormonir` WHERE Type='Minor' and Special='" + minorRadioList.SelectedItem.ToString().Trim() + "' and Trim='V')";
                     String commandforSem6 = "SELECT `Type`,`Special`,`CourseName`, `Hours`, `Marks` FROM `majormonir` WHERE Type='major' and Special='" + majorRadioList.SelectedItem.ToString().Trim() + "' and Trim='VI' UNION (SELECT `Type`,`Special`,`CourseName`, `Hours`, `Marks` FROM `majormonir` WHERE Type='Minor' and Special='" + minorRadioList.SelectedItem.ToString().Trim() + "' and Trim='VI')";
