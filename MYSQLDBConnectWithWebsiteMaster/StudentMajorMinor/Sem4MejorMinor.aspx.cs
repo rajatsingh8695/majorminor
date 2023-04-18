@@ -14,6 +14,7 @@ namespace MYSQLDBConnectWithWebsiteMaster.StudentMajorMinor
 {
     public partial class Sem4MejorMinor : System.Web.UI.Page
     {
+        //adding git comment
         
         bool minorselection;
         protected void Page_Load(object sender, EventArgs e)
